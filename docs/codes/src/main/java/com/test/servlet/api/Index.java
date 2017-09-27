@@ -1,6 +1,5 @@
 package com.test.servlet.api;
 
-import javax.jws.soap.InitParam;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebInitParam;
 import javax.servlet.annotation.WebServlet;
@@ -33,7 +32,6 @@ public class Index extends HttpServlet{
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp)throws IOException{
-        //控制空间对象的属性,通过这些空间对象属性web组件中间可以传递和共享信息
         HttpSession session=req.getSession();
         String testSession= (String)session.getAttribute("test");
         System.out.println(testSession);
