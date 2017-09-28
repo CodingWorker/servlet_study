@@ -1,7 +1,6 @@
 package com.test.servlet.api;
 
-import javafx.scene.media.Media;
-
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebInitParam;
 import javax.servlet.annotation.WebServlet;
@@ -9,7 +8,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import java.awt.*;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.io.PrintWriter;
@@ -47,6 +45,13 @@ public class Index extends HttpServlet{
         writer.close();
         resp.flushBuffer();
     }
+
+    private void helloGetResponse(HttpServletRequest req,HttpServletResponse resp)throws Exception{
+        RequestDispatcher dispatcher= req.getRequestDispatcher("/greeting/hello");
+        dispatcher.forward(req,resp);
+    }
+
+
 
     @Override
     protected void doPost(HttpServletRequest req,HttpServletResponse resp)throws IOException{
