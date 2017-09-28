@@ -34,7 +34,7 @@ public class Greeting extends HttpServlet implements RequestDispatcher{
 
     @Override
     public void forward(ServletRequest request, ServletResponse response) throws ServletException, IOException {
-        
+
     }
 
     @Override
