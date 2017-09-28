@@ -1,9 +1,6 @@
-package com.test.servlet.listener;
+package com.test.servlet.api;
 
-import com.mysql.jdbc.ReplicationMySQLConnection;
-import com.oracle.jrockit.jfr.ValueDefinition;
-
-import javax.jws.WebService;
+import javax.servlet.*;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -18,7 +15,7 @@ import java.io.OutputStream;
  * Project: my-servlet
  */
 @WebServlet("/greeting")
-public class Greeting extends HttpServlet {
+public class Greeting extends HttpServlet implements RequestDispatcher{
     @Override
     public void doGet(HttpServletRequest req, HttpServletResponse resp)throws IOException{
         String reqUrl= req.getRequestURI();
@@ -33,5 +30,15 @@ public class Greeting extends HttpServlet {
         OutputStream outputStream=resp.getOutputStream();
         outputStream.write("greeting/hello called".getBytes());
         outputStream.close();
+    }
+
+    @Override
+    public void forward(ServletRequest request, ServletResponse response) throws ServletException, IOException {
+        
+    }
+
+    @Override
+    public void include(ServletRequest request, ServletResponse response) throws ServletException, IOException {
+
     }
 }
