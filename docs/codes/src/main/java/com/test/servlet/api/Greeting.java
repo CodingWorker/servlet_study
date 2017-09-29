@@ -1,5 +1,8 @@
 package com.test.servlet.api;
 
+import org.omg.PortableInterceptor.ServerRequestInfo;
+import sun.misc.Request;
+
 import javax.servlet.*;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -14,14 +17,15 @@ import java.io.OutputStream;
  * Date:    2017/9/28
  * Project: my-servlet
  */
-@WebServlet("/greeting")
+@WebServlet(urlPatterns = {"/greeting"})
 public class Greeting extends HttpServlet implements RequestDispatcher{
     @Override
-    public void doGet(HttpServletRequest req, HttpServletResponse resp)throws IOException{
-        String reqUrl= req.getRequestURI();
-        if(reqUrl.endsWith("greeting/hello")){
-            helloGet(req,resp);
-        }
+    public void doGet(HttpServletRequest req, HttpServletResponse resp)throws IOException,ServletException{
+          RequestDispatcher rd=req.getRequestDispatcher("/index");
+          rd.forward(req,resp);
+
+//        String redirectUrl="http://www.baidu.com";
+//        resp.sendRedirect(redirectUrl);
     }
 
     private void helloGet(HttpServletRequest req,HttpServletResponse resp)throws IOException{

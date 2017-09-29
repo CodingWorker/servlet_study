@@ -6,6 +6,8 @@ import javax.print.attribute.standard.MediaSize;
 import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;
 import javax.servlet.annotation.WebInitParam;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
@@ -29,7 +31,7 @@ public class LogFilter implements Filter {
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
         //log for some reason
-        chain.doFilter(new MyRequestWrapper(request),new MyResponseWrapper(response));
+        chain.doFilter(new MyRequestWrapper((HttpServletRequest) request),new MyResponseWrapper((HttpServletResponse) response));
     }
 
     @Override

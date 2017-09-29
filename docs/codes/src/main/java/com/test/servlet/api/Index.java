@@ -19,7 +19,7 @@ import java.util.Enumeration;
  * Date:    2017/9/27
  * Project: my-servlet
  */
-@WebServlet(value = "/index",asyncSupported = true,initParams = {
+@WebServlet(urlPatterns = {"/index"},asyncSupported = true,initParams = {
         @WebInitParam(name = "a",value = "aa"),
         @WebInitParam(name = "b",value = "bb")
 })

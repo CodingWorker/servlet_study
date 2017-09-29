@@ -3,7 +3,10 @@ package com.test.servlet.filter;
 import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;
 import javax.servlet.annotation.WebInitParam;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.sound.sampled.AudioFormat;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.charset.Charset;
 import java.nio.charset.CharsetEncoder;
@@ -33,7 +36,7 @@ public class AuthenticationFilter implements Filter {
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
         //change the request's headers
         request.setAttribute("charset","UTF-8");
-        chain.doFilter(new MyRequestWrapper(request),new MyResponseWrapper(response));
+        chain.doFilter(new MyRequestWrapper((HttpServletRequest) request),new MyResponseWrapper((HttpServletResponse) response));
     }
 
     @Override
