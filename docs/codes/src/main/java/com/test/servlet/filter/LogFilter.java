@@ -16,7 +16,8 @@ import java.io.IOException;
  * Date:    2017/9/28
  * Project: my-servlet
  */
-@WebFilter(value = "/*",
+@WebFilter(asyncSupported = true,
+        value = "/*",
 initParams = {
         @WebInitParam(name="a",value = "aa"),
         @WebInitParam(name="b",value = "bb")

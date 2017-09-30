@@ -5,11 +5,7 @@ import javax.servlet.annotation.WebFilter;
 import javax.servlet.annotation.WebInitParam;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.sound.sampled.AudioFormat;
-import java.io.FileWriter;
 import java.io.IOException;
-import java.nio.charset.Charset;
-import java.nio.charset.CharsetEncoder;
 import java.sql.Connection;
 
 /**
@@ -18,7 +14,9 @@ import java.sql.Connection;
  * Date:    2017/9/28
  * Project: my-servlet
  */
-@WebFilter(value = "/*",//拦截的url格式
+@WebFilter(
+        asyncSupported = true,
+        value = "/*",//拦截的url格式
         filterName = "AuthenticationFilter",initParams = {
         @WebInitParam(name="user-db",value = "mydb"),
         @WebInitParam(name="db-password",value = "1234.asd")

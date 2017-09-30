@@ -55,7 +55,6 @@ public class UploadFile extends HttpServlet{
             Path filePath = Paths.get(this.uploadDir, fileName);
             bout = new BufferedOutputStream(new FileOutputStream(filePath.toFile()));
 
-
             byte[] bytes = new byte[2048];
             StringBuilder sb = new StringBuilder();
             while (bin.read(bytes, 0, 2048) != -1) {
