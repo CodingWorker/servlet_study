@@ -4,6 +4,17 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
          http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+    <!-- 这里的配置页面不会被调试程序使用
+    <servlet>
+        <servlet-name>index</servlet-name>
+        <servlet-class>com.test.servlet_jiaocheng.api.IndexServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>index</servlet-name>
+        <url-pattern>/index</url-pattern>
+    </servlet-mapping>
+
     <servlet>
         <servlet-name>MyFirstServlet</servlet-name>
         <servlet-class>com.test.servlet_jiaocheng.FirstServlet</servlet-class>
@@ -15,5 +26,5 @@
     <welcome-file-list>
         <welcome-file>/first</welcome-file>
     </welcome-file-list>
-
+     -->
 </web-app>

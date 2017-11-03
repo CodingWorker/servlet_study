@@ -5,6 +5,18 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/ServletDemo.iml" filepath="$PROJECT_DIR$/.idea/modules/ServletDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/ServletDemo_main.iml" filepath="$PROJECT_DIR$/.idea/modules/ServletDemo_main.iml" group="ServletDemo" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/ServletDemo_test.iml" filepath="$PROJECT_DIR$/.idea/modules/ServletDemo_test.iml" group="ServletDemo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/api.iml" filepath="$PROJECT_DIR$/.idea/modules/api.iml" group="api" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/api-dao.iml" filepath="$PROJECT_DIR$/.idea/modules/api-dao.iml" group="api-dao" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/api-dao/api-dao_main.iml" filepath="$PROJECT_DIR$/.idea/modules/api-dao/api-dao_main.iml" group="api-dao" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/api-dao/api-dao_test.iml" filepath="$PROJECT_DIR$/.idea/modules/api-dao/api-dao_test.iml" group="api-dao" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/api-model.iml" filepath="$PROJECT_DIR$/.idea/modules/api-model.iml" group="api-model" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/api-model/api-model_main.iml" filepath="$PROJECT_DIR$/.idea/modules/api-model/api-model_main.iml" group="api-model" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/api-model/api-model_test.iml" filepath="$PROJECT_DIR$/.idea/modules/api-model/api-model_test.iml" group="api-model" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/api-service.iml" filepath="$PROJECT_DIR$/.idea/modules/api-service.iml" group="api-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/api-service/api-service_main.iml" filepath="$PROJECT_DIR$/.idea/modules/api-service/api-service_main.iml" group="api-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/api-service/api-service_test.iml" filepath="$PROJECT_DIR$/.idea/modules/api-service/api-service_test.iml" group="api-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/api/api_main.iml" filepath="$PROJECT_DIR$/.idea/modules/api/api_main.iml" group="api" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/api/api_test.iml" filepath="$PROJECT_DIR$/.idea/modules/api/api_test.iml" group="api" />
     </modules>
   </component>
 </project>

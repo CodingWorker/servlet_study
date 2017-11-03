@@ -1,0 +1,41 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Gradle : com.test.servlet_jiaocheng : api-1.0-SNAPSHOT.war (exploded)">
+    <output-path>$PROJECT_DIR$/api/build/libs/exploded/api-1.0-SNAPSHOT.war</output-path>
+    <properties id="gradle-properties">
+      <options external-project-path="$PROJECT_DIR$">
+        <manifest>TWFuaWZlc3QtVmVyc2lvbjogMS4wDQoNCg==</manifest>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/api/build/libs/exploded/api-1.0-SNAPSHOT.war/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="api_main/web/Web Gradle : api-1.0-SNAPSHOT.war" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="api_main" />
+          <element id="dir-copy" path="$PROJECT_DIR$/api/build/resources/main" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Gradle: javax.servlet:javax.servlet-api:3.1.0" />
+          <element id="library" level="project" name="Gradle: com.fasterxml.jackson.core:jackson-core:2.8.8" />
+          <element id="library" level="project" name="Gradle: com.fasterxml.jackson.core:jackson-databind:2.8.8" />
+          <element id="library" level="project" name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.8.8" />
+          <element id="archive" name="com.test.servlet_jiaocheng-api-model-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="api-model_main" />
+            <element id="dir-copy" path="$PROJECT_DIR$/api-model/build/resources/main" />
+          </element>
+          <element id="archive" name="com.test.servlet_jiaocheng-api-service-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="api-service_main" />
+            <element id="dir-copy" path="$PROJECT_DIR$/api-service/build/resources/main" />
+          </element>
+          <element id="archive" name="com.test.servlet_jiaocheng-api-dao-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="api-dao_main" />
+            <element id="dir-copy" path="$PROJECT_DIR$/api-dao/build/resources/main" />
+          </element>
+          <element id="library" level="project" name="Gradle: mysql:mysql-connector-java:6.0.5" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
