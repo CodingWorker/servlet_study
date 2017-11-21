@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.test.servlet_jiaocheng.api.ApiResultTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-11-03T07:03:16" hostname="daiyan" time="0.147">
+  <properties/>
+  <testcase name="testToString" classname="com.test.servlet_jiaocheng.api.ApiResultTest" time="0.147"/>
+  <system-out><![CDATA[{"code":0,"message":"ok","data":["a","b"]}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

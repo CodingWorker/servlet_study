@@ -3,8 +3,12 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/ServletDemo.iml" filepath="$PROJECT_DIR$/.idea/modules/ServletDemo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ServletDemo_main.iml" filepath="$PROJECT_DIR$/.idea/modules/ServletDemo_main.iml" group="ServletDemo" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ServletDemo_test.iml" filepath="$PROJECT_DIR$/.idea/modules/ServletDemo_test.iml" group="ServletDemo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/api/api.iml" filepath="$PROJECT_DIR$/.idea/modules/api/api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/api-dao/api-dao.iml" filepath="$PROJECT_DIR$/.idea/modules/api-dao/api-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/api-model/api-model.iml" filepath="$PROJECT_DIR$/.idea/modules/api-model/api-model.iml" group="api-model" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/api-model/api-model_main.iml" filepath="$PROJECT_DIR$/.idea/modules/api-model/api-model_main.iml" group="api-model" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/api-model/api-model_test.iml" filepath="$PROJECT_DIR$/.idea/modules/api-model/api-model_test.iml" group="api-model" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/api-service/api-service.iml" filepath="$PROJECT_DIR$/.idea/modules/api-service/api-service.iml" />
     </modules>
   </component>
 </project>

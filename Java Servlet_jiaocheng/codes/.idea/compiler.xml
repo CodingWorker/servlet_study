@@ -19,8 +19,8 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="ServletDemo_main" target="1.8" />
-      <module name="ServletDemo_test" target="1.8" />
+      <module name="api-model_main" target="1.8" />
+      <module name="api-model_test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

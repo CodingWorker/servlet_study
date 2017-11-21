@@ -1,2 +1,5 @@
 rootProject.name = 'ServletDemo'
-
+include 'api-service'
+include 'api-dao'
+include 'api-model'
+include 'api'
